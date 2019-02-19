@@ -81,7 +81,8 @@ opacity: 2;
 {
   padding-top: 10px;
   height: 510px;
-
+  margin-top: 80px;
+  margin-right: 40px;
 }
 
 .nav-bar 
@@ -297,7 +298,7 @@ opacity: 2;
 .social-icons
 {
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
   position:sticky;
   z-index: 1;
   width: 80px;
@@ -340,7 +341,7 @@ opacity: 2;
   padding: 12px 15px;
   border-radius: 50%;
   margin-bottom: -10px;
-
+  
 }
 .fa.fa-arrow-up:hover{
   border: 2px solid #000000;
