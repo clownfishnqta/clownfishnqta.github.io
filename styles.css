@@ -218,7 +218,7 @@ opacity: 2;
 .row .col-md-4 .fa {
   padding: 10px;
   font-size: 80px;
-  margin-left: 35%;
+  margin-left: 32%;
   margin-top: 30px;
 }
 .row .col-md-4 .fab {
@@ -239,7 +239,7 @@ opacity: 2;
 }
 .expertise-box #rest
 {
-  margin-left: 23%;
+  margin-left: 20%;
   font-size: 30px;
   margin-top: 30px;
   color: #000000; 
@@ -340,6 +340,7 @@ opacity: 2;
   padding: 12px 15px;
   border-radius: 50%;
   margin-bottom: -10px;
+
 }
 .fa.fa-arrow-up:hover{
   border: 2px solid #000000;
