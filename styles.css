@@ -1,3 +1,4 @@
+
 body 
   {
     margin: 0;
@@ -284,7 +285,7 @@ body
  
 /*-----------------Social Media-------------------*/
   
-.social-icons
+/*.social-icons
 {
   top: 50%;
   position: static;
@@ -319,7 +320,7 @@ body
 
 
 /*-----------------Go to top Icon-------------------*/
-
+/*
 .fa.fa-arrow-up {
   border: 2px solid #000000;
   position: sticky;
@@ -330,7 +331,6 @@ body
   padding: 12px 15px;
   border-radius: 50%;
   margin-bottom: -10px;
-  display: none;
 }
 .fa.fa-arrow-up:hover{
   border: 2px solid #000000;
@@ -340,6 +340,7 @@ body
   transition: 0.6s;
 }
 
+*/
   @media only screen and (min-width: 1000px){
   body 
   {
@@ -418,8 +419,8 @@ body
   
   .about
   {
-    padding-top: 110px;
-    margin-bottom: -80px;
+    padding-top: 80px;
+    margin-bottom: -30vh;
   }
   .profile-img 
   {
@@ -565,14 +566,17 @@ body
     font-size: 80px;
     margin-left: 32%;
     margin-top: 30px;
+    color: #000;
   }
   .row .col-md-4 .fab {
     padding: 10px;
     font-size: 80px;
     margin-left: 35%;
     margin-top: 30px;
+    color: #000;
   }
   
+
   
   .expertise-box p
   {
@@ -610,6 +614,14 @@ body
   {
     color: #fff;
   }
+  .expertise-box:hover .fab
+  {
+    color: #fff;
+  }
+  .expertise-box:hover .fa
+  {
+    color: #fff;
+  }
   .contact
   {
     padding-top: 50px;
@@ -629,12 +641,15 @@ body
     margin-left: 30px;
     padding: 10px;
     font-size: 70px;
+    color: #fff;
   }
   .contact .col-md-4 .fab
   {
     margin-left: -5px;
     padding: 10px;
     font-size: 70px;
+    color: #fff;
+
   }
   
   /*-----------------Social Media-------------------*/
