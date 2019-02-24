@@ -1,4 +1,4 @@
-
+@media only screen and (max-width: 812px){
 body 
   {
     margin: 0;
@@ -284,63 +284,41 @@ body
  }
  
 /*-----------------Social Media-------------------*/
-  
-/*.social-icons
+.social-icons
 {
-  top: 50%;
-  position: static;
-  z-index: 1;
-  width: 80px;
-  display: none;
+  display: table;
+  margin: 0 auto;
 }
 .social-icons ul
 {
-  padding: initial;
+  margin-right: 5vh;
+  padding-bottom: 20px;
 }
 .social-icons ul li
 {
-  padding: initial;
-  height: 40px;
-  width: 40px;
-  list-style-type: none;
-  padding-left: 12px;
-  padding-top: 6px;
-  margin-top: 5px;
+  display: inline;
+  padding: 10px 15px 10px 15px;
+  background: #23a4e0;
+  border-radius: 20%;
   color: #fff;
-  background-color: #23a4e0;
-  border-top-right-radius: 20%;
-  border-bottom-right-radius: 20%;
+  margin: 5px;
 }
-.social-icons ul li:hover
-{
-  padding-left: 30px;
-  width: 80px;
-  transition: 0.5s;
-} 
+
 
 
 /*-----------------Go to top Icon-------------------*/
-/*
+
 .fa.fa-arrow-up {
-  border: 2px solid #000000;
+  border: transparent ;
   position: sticky;
-  bottom: 30px;
-  left: 95%;
-  background: #000;
-  color: #fff;
-  padding: 12px 15px;
-  border-radius: 50%;
-  margin-bottom: -10px;
+  background: transparent;
+  color: transparent;
+  pointer-events: none;
+  cursor: default;
+  display: none;
 }
-.fa.fa-arrow-up:hover{
-  border: 2px solid #000000;
-  background: #fff;
-  color: #000;
-  border-color: #000;
-  transition: 0.6s;
 }
 
-*/
   @media only screen and (min-width: 1000px){
   body 
   {
@@ -420,8 +398,10 @@ body
   .about
   {
     padding-top: 80px;
-    margin-bottom: -30vh;
+    margin-bottom: -20vh;
+   
   }
+  
   .profile-img 
   {
     padding-top: 10px;
