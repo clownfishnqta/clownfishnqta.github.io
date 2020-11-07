@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport">
 	<title>Ivaylo Plashkov's Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
@@ -189,48 +187,62 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="expertise-box">
-						<i class="fa fa-rocket"></i>
-						<p>Front-end Design</p>
+						<i class="fa fa-rocket icons"></i>
+						<span>Web Design</span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="expertise-box">
-						<i class="fab fa-js"></i>
-						<p>JavaScript/jQuery</p>
+						<i class="fab fa-js icons"></i>
+						<span>JavaScript/jQuery</span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="expertise-box">
-						<i class="fa fa-laptop"></i>
-						<p id="rest">REST Services</p>
+						<i class="fa fa-laptop icons"></i>
+						<span>Object-Oriented Programming</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="expertise-box">
+						<i class="fas fa-server icons"></i>
+						<span>REST Services</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="expertise-box">
+						<i class="fab fa-git-square icons"></i>
+						<span>Git</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="expertise-box">
+						<i class="fas fa-users icons"></i>
+						<span>Agile Methodologies</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!---------------------Contact------------------->
-	<section class="contact" id="contact">
-		<div class="container text-center">
-			<h1>Contact me</h1>
-			<p class="text-center">If you have any questions, feel free to contact me via any of the options listed bellow or choose from the social icons on the left.</p>
-			<div class="row">
-				<div class="col-md-4">
-					<i class="fa fa-phone"></i>
-					<p>+359 895 773 342</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-envelope"></i>
-					<p>ivaylo.plashkov@gmail.com</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fab fa-skype"></i>
-					<p>hyex_vd</p>
-				</div>
-			</div>
+	<footer class="contact" id="contact">
+		<h1 class="footer-heading">Contact me</h1>
+		<p class="footer-paragraph">If you have any questions, feel free to contact me via any of the options listed bellow or choose from the social icons on the left.</p>
+		<ul class="contact-list">
+			<li class="contact-wrapper">
+				<i class="contact-icon fa fa-phone"></i>
+				<p class="contact-text">+359 895 773 342</p>
+			</li>
+			<li class="contact-wrapper">
+				<i class="contact-icon fab fa-skype"></i>
+				<p class="contact-text">hyex_vd</p>
+			</li>
+			<li class="contact-wrapper">
+				<i class="contact-icon fa fa-envelope"></i>
+				<p class="contact-text">ivaylo.plashkov@gmail.com</p>
+			</li>
 		</div>
-	</section>
-	<a href="#header" id="topBtn" class="to-top">
-		<i class="fa fa-arrow-up"></i>
-	</a>
+	</footer>
+	<a id="back2Top" title="Back to top" href="#">&#8679;</a>
 </body>
 </html>
