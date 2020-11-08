@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	font-family: sans-serif;
+}
+
+section {
+	padding: 2rem;
 }
 
 #header {
@@ -13,11 +20,43 @@ body {
 	background-attachment: fixed;
 }
 
+/*-----------------Navbar--------------*/
+
+.navbar-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar-list {
+	display: flex;
+	list-style-type: none;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin: 0;
+}
+
+.navbar-list-item > a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1.4rem;
+    padding: .5rem;
+}
+
+.navbar-list-item > a:hover {
+	border-bottom: 3px solid white;
+}
+
 .user-box {
 	top: 30%;
 	left: 52%;
 	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: absolute;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 2.5rem;
 }
 
 .user-box img {
@@ -26,13 +65,15 @@ body {
 	border: 2px solid #00ffff;
 }
 .user-box h1 {
-	color: #fff;
-	font-weight: bold;
-	margin: 10px;
+    color: #fff;
+    font-weight: bold;
+	margin: 1rem;
 }
 
 .user-box p {
+	margin: 0;
 	color: #fff;
+	font-size: 1.5rem;
 }
 
 .scroll-btn {
@@ -60,16 +101,36 @@ body {
 
 /*-----------------About-----------------*/
 
-.about {
-	padding-top: 80px;
-	margin-bottom: -10vh;
+.about-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 8rem;
+}
+
+.about-heading {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.about-paragraph {
+	text-indent: 1cm;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.about-article {
+	max-width: 30rem;
+	margin: 2rem;
 }
 
 .profile-img {
-	padding-top: 10px;
-	height: 510px;
-	margin-top: 80px;
-	margin-right: 40px;
+	height: 35rem;
+	max-width: 30rem;
+	margin: 0 2rem;
 }
 
 .nav-bar {
@@ -223,7 +284,8 @@ body {
 .contact {
 	padding: 3rem 0;
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/communication-png-hd-communication-png-hd-1200.png);
-	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
 	color: #fff;
 	text-align: center;
 }
@@ -267,6 +329,7 @@ body {
 	transform: translateY(-80%);
 	position:sticky;
 	z-index: 1;
+	margin-left: -2rem;
 	width: 80px;
 }
 
