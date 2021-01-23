@@ -48,11 +48,16 @@
 			</ul>
 		</nav>
 	</section>
+
 	<!-----------------About----------------->
 	<section class="about-section" id="about">
-		<img src="img/124333632_443079196677142_1268867540372856809_n.jpg" class="profile-img">
+		<div class="img-wrapper">
+			<img src="img/124333632_443079196677142_1268867540372856809_n.jpg" class="profile-img">
+		</div>
 		<article class="about-article">
+
 			<h3 class="about-heading">Who Am I ?</h3>
+
 			<p class="about-paragraph">
 				Hello, My name is Ivaylo Plashkov and I am  23 years old web developer.
 				I'm based in Sofia which is the capital city of Bulgaria and currently chasing a masters degree in Software Engineering at the Technical University in Sofia.
@@ -60,7 +65,7 @@
 				OPENUI5 and SAPUI5 Web frameworks. I have also contributed to the UI5 Web Components project, which is not released officially yet. I love to travel and explore different cultures and last but not least I love snowboarding.
 				<p class="about-paragraph">My biggest assets are strong communication skills, attention to detail, ability to prioritize and multitask, being proactive.
 				I am willing to take additional classes or study in order to become a productive and contributing team member.</p>
-				<br><center><b>Progress bars that represent my progression with different programming languages:</b></center>
+				<p class="progress-paragraph">Progress bars that represent my progression with different programming languages:</b></center>
 			</p>
 			<div class="skills-bar">
 				<p>HTML</p>
@@ -88,41 +93,9 @@
 	</section>
 	<!----------------Social Media--------------->
 
-	<!-- <section class="social-icons">
-		<ul>
-			<a class="social-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/clownfishnqta">
-				<li>
-					<i class="fab fa-github"></i>
-				</li>
-			</a>
-			<a class="social-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ivaylo-plashkov-a3143717b/">
-				<li>
-					<i class="fab fa-linkedin"></i>
-				</li>
-			</a>
-			<a class="social-btn" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ivoplashkov">
-				<li>
-					<i class="fab fa-twitter"></i>
-				</li>
-			</a>
-			<a class="social-btn" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ivo.plashkov">
-				<li>
-					<i class="fab fa-facebook"></i>
-				</li>
-			</a>
-			<a class="social-btn" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ivoplashkov/">
-				<li>
-					<i class="fab fa-instagram"></i>
-				</li>
-			</a>
-		</ul>
-	</section> -->
-
 	<!----------------Resume--------------------->
 	<section class="education" id="education">
-		<div class="container" id="background-img">
-			<div class="row">
-				<div class="col-md-6">
+				<div class="education-container">
 					<h3 class="text-center">My Education</h3>
 					<ul class="timeline">
 						<li class="institutes">
@@ -155,8 +128,15 @@
 							</p>
 						</li>
 						<li class="institutes">
+							<h4><b>Master's degree</b></h4>
+							<p>Master's degree at "Technical University" - Sofia, specialty "Software Engineering".<br><br>
+								<b>Institute:</b> Technical University - Sofia<br>
+								<b>Session:</b> 2020-2021<br>
+							</p>
+						</li>
+						<li class="institutes">
 							<h4><b>Bachelor's degree</b></h4>
-							<p>This is my third year in "Technical University" - Sofia, specialty "Telecommunications".<br><br>
+							<p>Bachelor's degree at "Technical University" - Sofia, specialty "Telecommunications".<br><br>
 								<b>Institute:</b> Technical University - Sofia<br>
 								<b>Session:</b> 2016-2020<br>
 							</p>
@@ -170,8 +150,6 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-		</div>
 	</section>
 	<!-------------------Expertise------------------->
 	<section class="expertise" id="expertise">
@@ -221,8 +199,33 @@
 	<!---------------------Contact------------------->
 	<footer class="contact" id="contact">
 		<h1 class="footer-heading">Contact me</h1>
-		<p class="footer-paragraph">If you have any questions, feel free to contact me via any of the options listed bellow or choose from the social icons on the left.</p>
-		<ul class="contact-list">
+		<p class="footer-paragraph">If you have any questions, feel free to contact me via the contact form bellow.</p>
+		<div class="contact-form-wrapper">
+			<div id="error_message">
+			</div>
+				<form action="" id="myform" onsubmit = "return validate();">
+					<div class="input_field">
+						<input type="text" placeholder="Name" id="name">
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Subject" id="subject">
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Phone" id="phone">
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Email" id="email">
+					</div>
+					<div class="input_field">
+						<textarea placeholder="Message" id="message"></textarea>
+					</div>
+					<div class="btn">
+						<input type="submit">
+					</div>
+				</form>
+			</div>
+
+		<!-- <ul class="contact-list">
 			<li class="contact-wrapper">
 				<i class="contact-icon fa fa-phone"></i>
 				<p class="contact-text">+359 895 773 342</p>
@@ -235,7 +238,8 @@
 				<i class="contact-icon fa fa-envelope"></i>
 				<p class="contact-text">ivaylo.plashkov@gmail.com</p>
 			</li>
-		</div>
+		</ul> -->
+
 	</footer>
 	<a id="back2Top" title="Back to top" href="#">&#8679;</a>
 </body>

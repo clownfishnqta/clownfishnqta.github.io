@@ -1,6 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.wrapper {
+	transform: translateY(2.5rem);
+	min-width: 50rem;
+}
+.img-wrapper {
+	min-width: 40%;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover{
+  width: 200px;
+}
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -107,11 +204,14 @@ section {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 8rem;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .about-heading {
 	text-align: center;
 	margin-bottom: 2rem;
+	font-weight: bold;;
+	font-size: 4rem;
 }
 
 .about-paragraph {
@@ -121,7 +221,12 @@ section {
 	font-size: 1.2rem;
 	text-align: center;
 }
-
+.progress-paragraph {
+	margin-top: 3rem;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	text-align: center;
+}
 .about-article {
 	max-width: 30rem;
 	margin: 2rem;
@@ -159,23 +264,50 @@ section {
 
 .skills-bar p {
 	margin-bottom: 6px;
-	font-weight: 600;
+}
+
+.skills-bar {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.3rem;
 }
 
 .progress {
 	border-radius: 16px !important;
 	margin-bottom: 10px;
+	display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+	background-color: #e9ecef;
+	box-sizing: border-box;
 }
 
 .progress-bar {
 	border-radius: 16px;
+	text-align: center;
 	background: #000 !important;
+	display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+	color: #e9ecef;
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
 }
 
 /*-----------------Resume--------------*/
 
 .education {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/2.jpg);
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/2.jpg);
 	background-color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -184,25 +316,34 @@ section {
 	padding-bottom: 30px;
 }
 
+.education-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .education h3 {
 	color: #fff;
 	margin-bottom: 50px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
 }
 
 .timeline {
 	list-style-type: none;
 	position: relative;
+	max-width: 30%;
 }
 
 .timeline::before {
 	content: '';
-	background-color: #000000;
-	display: inline-block;
-	position: absolute;
-	left: 29px;
-	width: 2px;
-	height: 100%;
-	z-index: 1;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    left: 2rem;
+    width: 4px;
+    height: 100%;
+    z-index: 1;
 }
 
 .timeline li.institutes {
@@ -219,7 +360,7 @@ section {
 	font-size: 15px;
 }
 
-.timeline li.institutes::before {
+/* .timeline li.institutes::before {
 	content: '';
 	background: #fff;
 	display: inline-block;
@@ -230,7 +371,7 @@ section {
 	width: 20px;
 	height: 20px;
 	z-index: 1;
-}
+} */
 
 /*-------------Expertise-------------*/
 
@@ -282,8 +423,11 @@ section {
 /*-------------Contact-------------*/
 
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 3rem 0;
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/communication-png-hd-communication-png-hd-1200.png);
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/communication-png-hd-communication-png-hd-1200.png);
 	background-position: center;
     background-attachment: fixed;
 	color: #fff;
@@ -319,12 +463,69 @@ section {
 .footer-paragraph {
 	padding: 0 2rem;
 }
-.footer-heading {
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+.contact-form-wrapper{
+  max-width: 50rem;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.contact-form-wrapper h2{
+  text-align: center;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.contact-form-wrapper .input_field{
+  margin-bottom: 0.625rem;
+}
+
+.contact-form-wrapper .input_field input[type="text"],
+.contact-form-wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 0.625rem;
+}
+
+.contact-form-wrapper textarea{
+  resize: none;
+  height: 5rem;
+}
+
+.contact-form-wrapper .btn input[type="submit"]{
+  border: 0;
+  margin-top: 1rem;
+  padding: 0.625rem;
+  text-align: center;
+  width: 100%;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 1.25rem;
+  background: #fe8b8e;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.5s ease;
 }
 
 /*-----------------Social Media-------------------*/
 
 .social-icons {
+	display: none;
 	top: 50%;
 	transform: translateY(-80%);
 	position:sticky;
