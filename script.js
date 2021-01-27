@@ -54,12 +54,7 @@ function validate(){
         return false;
     }
 
-    this.submitForm();
-
-    return true;
-}
-
-function submitForm() {
     alert("Form Submitted Successfully!");
 
+    return true;
 }
